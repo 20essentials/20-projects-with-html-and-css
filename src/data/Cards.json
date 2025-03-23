@@ -1,0 +1,162 @@
+[
+  {
+    "id": 1,
+    "title": "Hotel Serenità",
+    "repo": "https://github.com/20essentials/project-000-010",
+    "web": "https://20essentials.github.io/project-000-010/",
+    "image": "./assets/hotel.avif",
+    "superId": "A7F3-19X2-84KD-520L"
+  },
+  {
+    "id": 2,
+    "title": "Vite Landing",
+    "repo": "https://github.com/20essentials/project-000-182",
+    "web": "https://20essentials.github.io/project-000-182/",
+    "image": "./assets/vite.avif",
+    "superId": "B4Z9-22M8-71QD-693P"
+  },
+  {
+    "id": 3,
+    "title": "Muntra",
+    "repo": "https://github.com/20essentials/project-000-438",
+    "web": "https://20essentials.github.io/project-000-438/",
+    "image": "./assets/muntra.avif",
+    "superId": "X1C7-30K5-92YL-845R"
+  },
+  {
+    "id": 4,
+    "title": "Fin",
+    "repo": "https://github.com/20essentials/project-000-513",
+    "web": "https://20essentials.github.io/project-000-513/",
+    "image": "./assets/fin.avif",
+    "superId": "M9V2-44N1-63BT-217Q"
+  },
+  {
+    "id": 5,
+    "title": "Direction Aware",
+    "repo": "https://github.com/20essentials/project-000-503",
+    "web": "https://20essentials.github.io/project-000-503/",
+    "image": "./assets/direction.avif",
+    "superId": "P3K8-56J7-41XC-935L"
+  },
+  {
+    "id": 6,
+    "title": "Take Photos",
+    "repo": "https://github.com/20essentials/project-000-440",
+    "web": "https://20essentials.github.io/project-000-440/",
+    "image": "./assets/take.avif",
+    "superId": "H6B4-61Y3-78VD-426P"
+  },
+  {
+    "id": 7,
+    "title": "Five Nights at Freddy's",
+    "repo": "https://github.com/20essentials/project-000-420",
+    "web": "https://20essentials.github.io/project-000-420/",
+    "image": "./assets/freddy.avif",
+    "superId": "J5Z2-75X9-90TL-307K"
+  },
+  {
+    "id": 8,
+    "title": "Burberry",
+    "repo": "https://github.com/20essentials/project-000-832",
+    "web": "https://20essentials.github.io/project-000-832/",
+    "image": "./assets/burberry.avif",
+    "superId": "D8Q3-80W6-51BN-652R"
+  },
+  {
+    "id": 9,
+    "title": "Infinity Slider",
+    "repo": "https://github.com/20essentials/project-000-374",
+    "web": "https://20essentials.github.io/project-000-374/",
+    "image": "./assets/space.avif",
+    "superId": "L2C9-94M1-64ZY-845P"
+  },
+  {
+    "id": 10,
+    "title": "View Transition + Blur",
+    "repo": "https://github.com/20essentials/project-000-348",
+    "web": "https://20essentials.github.io/project-000-348/",
+    "image": "./assets/blur.avif",
+    "superId": "F1X7-10B5-83KT-725L"
+  },
+  {
+    "id": 11,
+    "title": "View Transitions + Circle Clip Path",
+    "repo": "https://github.com/20essentials/project-000-346",
+    "web": "https://20essentials.github.io/project-000-346/",
+    "image": "./assets/tokyo.avif",
+    "superId": "V3P6-29W8-70MD-418X"
+  },
+  {
+    "id": 12,
+    "title": "View Transitions + Hue Rotate",
+    "repo": "https://github.com/20essentials/project-000-335",
+    "web": "https://20essentials.github.io/project-000-335/",
+    "image": "./assets/campo.avif",
+    "superId": "T7K2-35Y9-58QZ-942D"
+  },
+  {
+    "id": 13,
+    "title": "tap-highlight-color",
+    "repo": "https://github.com/20essentials/project-000-305",
+    "web": "https://20essentials.github.io/project-000-305/",
+    "image": "./assets/reders.avif",
+    "superId": "R5B1-48N6-91XC-301P"
+  },
+  {
+    "id": 14,
+    "title": "Black and White",
+    "repo": "https://github.com/20essentials/project-000-203",
+    "web": "https://20essentials.github.io/project-000-203/",
+    "image": "./assets/black.avif",
+    "superId": "C9Q4-52X7-40VT-738M"
+  },
+  {
+    "id": 15,
+    "title": "Animate campus",
+    "repo": "https://github.com/20essentials/project-000-114",
+    "web": "https://20essentials.github.io/project-000-114/",
+    "image": "./assets/relax.avif",
+    "superId": "Y8V3-66M5-87QL-524D"
+  },
+  {
+    "id": 16,
+    "title": "Stars Falling",
+    "repo": "https://github.com/20essentials/project-000-048",
+    "web": "https://20essentials.github.io/project-000-048/",
+    "image": "./assets/universe.avif",
+    "superId": "K4W2-71N9-36BZ-410X"
+  },
+  {
+    "id": 17,
+    "title": "Portfolio Template",
+    "repo": "https://github.com/20essentials/project-000-026",
+    "web": "https://20essentials.github.io/project-000-026/",
+    "image": "./assets/template.avif",
+    "superId": "N2P7-85X3-93KD-697L"
+  },
+  {
+    "id": 18,
+    "title": "Golf Roseboud",
+    "repo": "https://github.com/20essentials/project-000-011",
+    "web": "https://20essentials.github.io/project-000-011/",
+    "image": "./assets/golf.avif",
+    "superId": "M7Q5-99W6-65YT-812D"
+  },
+  {
+    "id": 19,
+    "title": "Soda Stereo Landing",
+    "repo": "https://github.com/20essentials/project-000-004",
+    "web": "https://20essentials.github.io/project-000-004/",
+    "image": "./assets/soda.avif",
+    "superId": "X1B3-03M8-72ZL-931P"
+  },
+  {
+    "id": 20,
+    "title": "Splash",
+    "repo": "https://github.com/20essentials/project-000-608",
+    "web": "https://20essentials.github.io/project-000-608/",
+    "image": "./assets/splash.avif",
+    "superId": "A9T6-15X9-45KD-280L"
+  }
+]

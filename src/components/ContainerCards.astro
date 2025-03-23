@@ -1,0 +1,405 @@
+---
+import Cards from '@/data/Cards.json';
+---
+
+<section>
+  {
+    Cards.map(({ image, repo, title, web, superId }) => {
+      return (
+        <div data-id={superId} class='case' style={`--bg-poster: url(${image})`}>
+          <a href={repo}>
+            <img class='logoGithub' src='./assets/github.svg' alt='github logo' />
+          </a>
+          <a href={web} class='container-bottom' />
+        </div>
+      );
+    })
+  }
+</section>
+
+<style>
+  section {
+    min-height: 100vh;
+    height: max-content;
+    background-color: white;
+    background-image: url('./assets/white-wall.png');
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 25rem));
+    place-content: center;
+    --pad-gap: 2vmax;
+    padding: var(--pad-gap);
+    gap: var(--pad-gap);
+  }
+
+  .case {
+    width: 20rem;
+    height: 17rem;
+    background:
+      linear-gradient(
+        to right,
+        #37474f,
+        #eeeeee 2px 4px,
+        transparent 5px 34px,
+        #eeeeee80 34px 36px,
+        #37474fcc 36px 37px,
+        #eeeeee80 37px 39px,
+        transparent 39px 98%,
+        #37474f 98.5% 99%,
+        #eeeeeeb3 99.5%
+      ),
+      #eeeeee1a var(--bg-poster) no-repeat 85% center/contain;
+    border: 0.125rem solid #eeeeee4d;
+    box-shadow:
+      0.75rem 0.75rem 0.75rem #263238,
+      0.75rem 0.5rem 0.75rem #263238cc inset;
+    position: relative;
+    box-sizing: border-box;
+    transition: filter 0.4s ease-in-out;
+
+    @media (width <= 550px) and (orientation: landscape) {
+      zoom: 0.8;
+      margin-inline: auto;
+    }
+    @media (width <= 1111px) and (orientation: portrait) {
+      zoom: 0.75;
+      margin-inline: auto;
+    }
+    @media (width <= 1111px) and (orientation: landscape) {
+      zoom: 0.85;
+      margin-inline: auto;
+    }
+
+    &:hover {
+      filter: contrast(125%) saturate(125%);
+    }
+
+    .logoGithub {
+      position: absolute;
+      right: 10px;
+      top: 10px;
+      mix-blend-mode: overlay;
+    }
+
+    .container-bottom {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      bottom: 0;
+      right: 0;
+      clip-path: polygon(0 0, 85% 0, 85% 20%, 100% 20%, 100% 100%, 0% 100%);
+    }
+
+    &::before,
+    &::after {
+      pointer-events: none;
+    }
+
+    &::before {
+      content: '';
+      width: 100%;
+      height: 100%;
+      background: radial-gradient(
+          80% 10% at -2% 30%,
+          #eeeeeeb3,
+          transparent 10%,
+          #eeeeee80 15% 25%,
+          transparent 40%
+        ),
+        conic-gradient(
+          from -95deg at 13% 18%,
+          transparent,
+          1deg,
+          #eeeeee99,
+          15deg,
+          #eeeeeeb3,
+          20deg,
+          transparent,
+          30deg,
+          transparent
+        ),
+        conic-gradient(
+          from -105deg at 8% 2%,
+          transparent,
+          1deg,
+          #37474f26,
+          15deg,
+          #37474f40,
+          20deg,
+          transparent,
+          50deg,
+          transparent
+        ),
+        conic-gradient(
+          from -110deg at 20% 0%,
+          transparent,
+          1deg,
+          #eeeeee80,
+          15deg,
+          #eeeeeebf,
+          20deg,
+          transparent,
+          50deg,
+          transparent
+        ),
+        conic-gradient(
+          from 35deg at 75% 10%,
+          transparent,
+          1deg,
+          #eeeeee99,
+          5deg,
+          #eeeeeeb3,
+          10deg,
+          transparent,
+          30deg,
+          transparent
+        ),
+        conic-gradient(
+          from 55deg at 78% 15%,
+          transparent,
+          1deg,
+          #eeeeee99,
+          5deg,
+          #eeeeee40,
+          10deg,
+          transparent,
+          30deg,
+          transparent
+        ),
+        conic-gradient(
+          from 58deg at 85% 20%,
+          transparent,
+          1deg,
+          #eeeeee99,
+          5deg,
+          #eeeeee40,
+          10deg,
+          transparent,
+          30deg,
+          transparent
+        ),
+        radial-gradient(
+          80% 10% at 100% 25%,
+          #eeeeeecc,
+          transparent 10%,
+          #eeeeee99 15% 25%,
+          transparent 40%
+        ),
+        radial-gradient(
+          13% 90% at 100% 50%,
+          transparent 10%,
+          #eeeeee99 12% 20%,
+          transparent 22%
+        ),
+        conic-gradient(
+          from 20deg at 91% 79%,
+          transparent,
+          1deg,
+          #eeeeeeb3,
+          5deg,
+          #eeeeeeb3,
+          10deg,
+          transparent,
+          15deg,
+          #eeeeeecc,
+          30deg,
+          #eeeeeeb3,
+          80deg,
+          transparent,
+          100deg,
+          #eeeeeecc,
+          110deg,
+          #eeeeee99,
+          112deg,
+          #eeeeeecc,
+          115deg,
+          transparent,
+          123deg,
+          transparent
+        ),
+        conic-gradient(
+          from 40deg at 96% 100%,
+          transparent,
+          1deg,
+          #eeeeeeb3,
+          15deg,
+          #eeeeee70,
+          35deg,
+          transparent,
+          30deg,
+          transparent
+        ),
+        conic-gradient(
+          from -190deg at 95% 97%,
+          transparent,
+          1deg,
+          #eeeeee80,
+          10deg,
+          #eeeeee70,
+          25deg,
+          transparent,
+          30deg,
+          transparent
+        ),
+        conic-gradient(
+          from 115deg at 81% 94%,
+          transparent,
+          1deg,
+          #eeeeeeb3,
+          15deg,
+          transparent,
+          40deg,
+          #eeeeeeb3,
+          60deg,
+          transparent,
+          80deg,
+          #eeeeeeb3,
+          100deg,
+          transparent,
+          120deg,
+          transparent
+        ),
+        conic-gradient(
+          from -190deg at 65% 94%,
+          transparent,
+          1deg,
+          #eeeeeeb3,
+          10deg,
+          #eeeeee99,
+          25deg,
+          transparent,
+          30deg,
+          transparent
+        ),
+        conic-gradient(
+          from -190deg at 62% 97%,
+          transparent,
+          1deg,
+          #eeeeee80,
+          10deg,
+          #eeeeeeb3,
+          30deg,
+          transparent,
+          30deg,
+          transparent
+        ),
+        conic-gradient(
+          from 180deg at 40% 96%,
+          transparent,
+          1deg,
+          #eeeeee99,
+          8deg,
+          #eeeeeeb3,
+          20deg,
+          transparent,
+          30deg,
+          transparent
+        ),
+        conic-gradient(
+          from -195deg at 35% 93%,
+          transparent,
+          1deg,
+          #eeeeee80,
+          8deg,
+          #eeeeeeb3,
+          20deg,
+          transparent,
+          30deg,
+          transparent
+        ),
+        conic-gradient(
+          from 195deg at 30% 95%,
+          transparent,
+          1deg,
+          #eeeeee80,
+          8deg,
+          #eeeeee40,
+          20deg,
+          transparent,
+          30deg,
+          transparent
+        ),
+        conic-gradient(
+          from 240deg at 20% 55%,
+          transparent,
+          1deg,
+          #eeeeee99,
+          5deg,
+          #eeeeee40,
+          10deg,
+          transparent,
+          30deg,
+          transparent
+        ),
+        conic-gradient(
+          from 255deg at 5% 90%,
+          transparent,
+          1deg,
+          #eeeeee99,
+          10deg,
+          #eeeeee40,
+          20deg,
+          transparent,
+          40deg,
+          transparent
+        ),
+        conic-gradient(
+          from 215deg at 20% 85%,
+          transparent,
+          1deg,
+          #eeeeeeb3,
+          10deg,
+          #eeeeee8c,
+          25deg,
+          transparent,
+          40deg,
+          transparent
+        ),
+        #37474f59;
+      position: absolute;
+    }
+    &::after {
+      content: attr(data-id);
+      width: 4rem;
+      height: 2.5rem;
+      border-radius: 0.5rem;
+      padding: 2rem 0 0 0.25rem;
+      box-sizing: border-box;
+      font-size: 0.26rem;
+      background: radial-gradient(
+          0.25rem 0.25rem at 90% 20%,
+          #0e0e0ecc,
+          transparent,
+          #0e0e0ecc,
+          transparent
+        ),
+        radial-gradient(ellipse at 80% 0, #b7c0c7bf, transparent 60%),
+        linear-gradient(
+          to right,
+          #f0f0f0 6%,
+          transparent 7% 46%,
+          #f0f0f0 47% 52%,
+          transparent 53% 80%,
+          #f0f0f0 85%
+        ),
+        linear-gradient(
+          #f1f1f1 20%,
+          transparent 21% 46%,
+          #f1f1f1 47% 52%,
+          transparent 53% 79%,
+          #f1f1f1 85%
+        ),
+        repeating-linear-gradient(
+          80deg,
+          transparent 2%,
+          #0e0e0ecc 2.5% 5%,
+          transparent 5.5% 6.5%,
+          #0e0e0ee6 6.5% 7.5%
+        ),
+        #f2f2f2e6;
+      transform: rotate(10deg);
+      position: absolute;
+      bottom: 1.25rem;
+      right: 1.75rem;
+    }
+  }
+</style>

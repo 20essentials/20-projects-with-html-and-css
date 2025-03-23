@@ -1,0 +1,4 @@
+- **Reference / Inspiration ⬇️**
+  - [Hero Image](https://github.com/20essentials/project-000-128)
+  - [Bubble Font](lhttps://www.dafont.com/it/search.php?q=bubble&page=3ink)
+  - [FrontendDev design Card, Thanks](https://codepen.io/the_frontdev/pen/yLWmKBB)

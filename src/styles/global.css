@@ -1,0 +1,91 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
+    'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue';
+}
+
+@font-face {
+  font-family: 'Game Bubble';
+  src: url('./assets/GameBubble.woff2') format(woff2);
+  font-display: swap;
+}
+
+:root {
+  --font-bubble: 'Game Bubble', Impact, sans-serif;
+}
+
+a,
+button,
+img {
+  -webkit-tap-highlight-color: transparent;
+  user-select: none;
+}
+
+button {
+  background-color: transparent;
+  border: none;
+  outline: none;
+}
+
+html {
+  font-size: 16px;
+}
+
+body {
+  max-width: 2700px;
+  margin-inline: auto;
+  min-height: 100vh;
+  height: max-content;
+  width: 100%;
+  flex-direction: column;
+}
+
+body {
+  --sb-track-color: #000;
+  --sb-thumb-color: linear-gradient(to bottom, orange, #00f);
+  --sb-size: 10px;
+
+  @media (width >= 2000px) {
+    --sb-size: 20px;
+  }
+
+  @media (width >= 4500px) {
+    --sb-size: 40px;
+  }
+
+  @media (width <= 1000px) {
+    --sb-size: 8px;
+  }
+
+  @media (width <= 650px) {
+    --sb-size: 5px;
+  }
+
+  @media (width <= 400px) {
+    --sb-size: 3px;
+  }
+}
+
+/***************************SCROLL***************************/
+
+body::-webkit-scrollbar {
+  width: var(--sb-size);
+}
+
+body::-webkit-scrollbar-track {
+  background: var(--sb-track-color);
+}
+
+body::-webkit-scrollbar-thumb {
+  background: var(--sb-thumb-color);
+}
+
+@supports not selector(::-webkit-scrollbar) {
+  body {
+    scrollbar-color: var(--sb-thumb-color) var(--sb-track-color);
+  }
+}
